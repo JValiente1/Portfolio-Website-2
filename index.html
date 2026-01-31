@@ -44,6 +44,23 @@
       opacity: 0.95;
     }
 
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
     nav {
       background-color: var(--card);
       display: flex;
@@ -135,6 +152,7 @@
 <body>
 
   <header>
+    <img src="assets/profile.jpg" alt="Jackie Valiente Profile Photo" class="avatar">
     <h1>Jackie Valiente</h1>
     <p>Information Technology Student | Aspiring IT Professional</p>
   </header>
